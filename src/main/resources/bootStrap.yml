@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: hystrix-monitor
+  profiles:
+    active: ${ACTIVE:local}
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

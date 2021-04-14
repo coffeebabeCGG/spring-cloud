@@ -1,0 +1,15 @@
+server:
+  port: 8777
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+        enabled: true
+      config:
+        file-extension: yml
+        server-addr: localhost:8848
+        enabled: false
+hystrix:
+  dashboard:
+    proxy-stream-allow-list: "localhost"
